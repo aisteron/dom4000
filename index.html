@@ -10,9 +10,60 @@
   <title>Concise Template</title>
 
   <link rel="stylesheet" type="text/css" media="screen" href="css/concise.min.css" />
+  <style>
+  html, body {height:100%;}
+  	.screen1
+  	{
+	  	
+	  	  background: url(img/screen1bg.jpg) no-repeat center center fixed; 
+		  -webkit-background-size: cover;
+		  -moz-background-size: cover;
+		  -o-background-size: cover;
+		  background-size: cover;
+
+		  width: 100%;
+		  height:100%;		
+  	}
+ 	.screen2
+ 	{
+ 		height:200px;
+ 		background-color: #ccc;
+ 		width: 400px
+ 	}
+
+ 	@media only screen and (max-width: 768px) 
+{
+	.screen1
+  	{
+	  	
+	  	  background: url(img/screen1bg768.jpg) no-repeat center center fixed; 
+		  -webkit-background-size: cover;
+		  -moz-background-size: cover;
+		  -o-background-size: cover;
+		  background-size: cover;
+}
+
+@media only screen and (max-width: 480px) 
+{
+	.screen1
+  	{
+	  	
+	  	  background: url(img/screen1bg480.jpg) no-repeat center center fixed; 
+		  -webkit-background-size: cover;
+		  -moz-background-size: cover;
+		  -o-background-size: cover;
+		  background-size: cover;
+}
+  </style>
 </head>
 
 <body>
-	<p>hello, world</p>
+	
+	<div class="screen1">
+		
+	</div>
+
+	<div class="screen2">
+	</div>
 </body>
 </html>
