@@ -9,7 +9,7 @@
 
   <title>Concise Template</title>
 
-  <link rel="stylesheet" type="text/css" media="screen" href="css/concise.min.css" />
+  
   <style>
   html, body {height:100%;}
   	.screen1
@@ -31,6 +31,35 @@
  		width: 400px
  	}
 
+ 	.innerContainer
+ 	{width:80%;margin:0 auto;}
+ 	.rtPhone{font-size: 2em}
+ 	.innerContainer .row1 .righttext
+ 	{
+ 		color:#fff;
+ 		float: right;
+ 		line-height: 74%
+ 		margin-top:3%;
+ 	}
+ 	.righttext input{
+		background-color: #ffd619;
+		color:#111;
+		border:0px !important;
+		width:200px !important;
+
+ 	}
+ 	.righttext input:hover{
+		background-color: #ffad00;
+		color:#111;
+ 	}
+ 	.mainH1
+ 	{
+ 	font-size: 3.5em;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+ 	}
+
  	@media only screen and (max-width: 768px) 
 {
 	.screen1
@@ -41,6 +70,8 @@
 		  -moz-background-size: cover;
 		  -o-background-size: cover;
 		  background-size: cover;
+	}
+	.mainh1 {font-size: 2.5em}
 }
 
 @media only screen and (max-width: 480px) 
@@ -60,10 +91,56 @@
 <body>
 	
 	<div class="screen1">
-		
+		<div class="innerContainer">
+			<div class="row1">
+				<img src="img/logo.png" alt="logo whg">
+				<div class="righttext">
+					<p>КОНСУЛЬТАЦИИ С 09:00 ДО 21:00, БЕЗ ВЫХОДНЫХ</p>
+					<p class='rtPhone'>+7 (987) 172-94-56</p>
+					<p>ЗАПИСАТЬСЯ НА ВСТРЕЧУ ПО ТЕЛЕФОНУ</p>
+					<input type='button' value='Перезвоните мне'>
+				</div>
+				<h1 class='mainH1'>Строительство домов из оцилиндрованного бревна и клееного бруса</h1>
+			</div>
+		</div>
 	</div>
 
-	<div class="screen2">
-	</div>
+	<main container>
+	<div row>
+      <div column="3">
+        <h3>Heading</h3>
+
+        <p>This is a short description for one of the three columns on our homepage.</p>
+
+        <a class="button button--sm">Learn More »</a>
+      </div>
+
+      <div column="3">
+        <h3>Heading</h3>
+
+        <p>This is a short description for one of the three columns on our homepage.</p>
+
+        <a class="button button--sm">Learn More »</a>
+      </div>
+
+      <div column="3">
+        <h3>Heading</h3>
+
+        <p>This is a short description for one of the three columns on our homepage.</p>
+
+        <a class="button button--sm">Learn More »</a>
+      </div>
+
+      <div column="3">
+        <h3>Heading</h3>
+
+        <p>This is a short description for one of the three columns on our homepage.</p>
+
+        <a class="button button--sm">Learn More »</a>
+      </div>
+    </div>
+
+	</main>
+	<link rel="stylesheet" type="text/css" media="screen" href="css/concise.min.css" />
 </body>
 </html>
