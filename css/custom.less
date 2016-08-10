@@ -1,0 +1,63 @@
+
+@radius: 6px;
+
+.screen1
+
+{
+	input{
+		padding:1em;
+		border-radius: @radius;
+	}
+}
+
+.section1
+{
+	.pure-u-1
+	{
+		img
+		{
+			display: block;
+			margin: 0 auto;
+		}
+		h3
+		{
+			text-align: center;
+		}
+	}
+	h2
+	{
+		font-size: 3em;
+		text-align: center;
+		text-transform: uppercase;
+	}
+}
+
+.section2
+{
+	background-color: #f4f4f4;
+	iframe
+	{
+		padding: 1em;
+	}
+	h2
+	{
+		&:extend(.section1 h2);
+		padding-top:1em;
+	}
+
+}
+.section3
+{
+	background-image: url(../img/greenbg.jpg);
+	h2
+	{
+		&:extend(.section1 h2);
+		color:#fff;
+	}
+	h3
+	{
+		text-align: center;
+		color:#fff;
+	}
+
+}

@@ -52,10 +52,11 @@
  	}
  	.mainH1
  	{
- 	//font-size: 2.5em;
+ 	font-size: 3em;
     text-transform: uppercase;
     color: #fff;
     text-align: center;
+    margin-top:2em;
  	}
 
  	.row1  h2
@@ -157,6 +158,7 @@
 
 <body>
 	
+	<!--screen 1-->
 	<div class="screen1">
 		<div class="innerContainer">
 			<div class="row1">
@@ -185,51 +187,53 @@
 			</div>
 		</div>
 	</div>
+	<!-- /screen1 -->
 
-	<div class='content'>
+	<!-- section1-->
+	<div class='content section1'>
+		<h2>Мы строим дома которые</h2>
 		<div class="pure-g">
             <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+				<img data-src="img/slices/001.jpg" class="lazyload">
+				<h3>Прочные и долговечные</h3>
+            </div>
 
-                <h3 class="content-subhead">
-                    <i class="fa fa-rocket"></i>
-                    Get Started Quickly
-                </h3>
-                <p>
-                    Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
-                </p>
-            </div>
             <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-                <h3 class="content-subhead">
-                    <i class="fa fa-mobile"></i>
-                    Responsive Layouts
-                </h3>
-                <p>
-                    Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
-                </p>
+				<img data-src="img/slices/002.jpg" class="lazyload">
+				<h3>Имеют отличную термоизоляцию</h3>
             </div>
+
             <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-                <h3 class="content-subhead">
-                    <i class="fa fa-th-large"></i>
-                    Modular
-                </h3>
-                <p>
-                    Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
-                </p>
+				<img data-src="img/slices/003.jpg" class="lazyload">
+				<h3>Срок службы более 100 лет</h3>
             </div>
+
             <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-                <h3 class="content-subhead">
-                    <i class="fa fa-check-square-o"></i>
-                    Plays Nice
-                </h3>
-                <p>
-                    Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
-                </p>
+				<img data-src="img/slices/004.jpg" class="lazyload">
+				<h3>Геометрически стабильны</h3>
             </div>
+            
         </div>
 	</div>
+	<!--/section1-->
+
+	<div class="content section2 lazyload" data-include="sections/2.html"></div>
+	<!--портфолио-->
+	<div class="content section3 lazyload" data-include="sections/3.html"></div>
+
+
+
+
+
+
 	<link rel="stylesheet" type="text/css" media="screen" href="css/pure-min.css" />
 	<link rel="stylesheet" type="text/css" media="screen" href="css/grids-responsive-min.css" />
+	<link rel="stylesheet/less" type="text/css" media="screen" href="css/custom.less" />
+
 	<script src='js/jquery-3.1.0.slim.min.js'></script>
+	<script src='js/less.min.js'></script>
+	<script src='js/lazysizes.min.js'></script>
+	<script src='js/ls.include.min.js'></script>
 
 	<script>
 		$(document).ready(function(){
